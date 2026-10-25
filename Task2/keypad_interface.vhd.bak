@@ -1,0 +1,26 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity keypad_interface is
+port (
+	clk : in std_logic;
+	reset : in std_logic;
+	row_in : in std_logic_vector(3 downto 0);
+	col_out : out std_logic_vector(3 downto 0);
+	led_out : out std_logic_vector(3 downto 0);
+	key_valid : out std_logic
+);
+end entity;
+
+architecture Behavior of keypad_interface is
+	type state_t is (IDLE, SCAN_COL1, SCAN_COL2, SCAN_COL3, SCAN_COL4, KEY_PRESS, DEBOUNCE, KEY_RELEASE);
+	signal state : state_t := IDLE;
+	
+	signal row_sync : std_logic_vector(3 downto 0) := "1111";
+	signal debounce_counter : integer := 0;
+	signal internal_key_value : std_logic_vector(3 downto 0);
+	signal row_sel, col_pat : std_logic_vector(3 downto 0) := "1111";
+	
+begin
+	

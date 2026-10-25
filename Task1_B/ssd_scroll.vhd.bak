@@ -1,0 +1,22 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity ssd_scroll is
+port(	
+	clk : in std_logic;
+	reset : in std_logic;
+	start : in std_logic;
+	seg_out : out std_logic_vector(6 downto 0);
+	dp_out : out std_logic;
+	sel_out : out std_logic_vector(3 downto 0)
+);
+end entity;
+
+architecture Behavior of ssd_scroll is
+	signal bcd_out : std_logic_vector(3 downto 0) := "1111";
+begin
+	bcd_output : seven_seg_scroll_bcd port map (clk => clk, reset => reset, start => start, 
+						bcd_out => bcd_out, sel_out => sel_out);
+	seg_output : bcd_to_ssd port map (bcd_in => bcd_out, seg_out => seg_out);
+end Behavior;

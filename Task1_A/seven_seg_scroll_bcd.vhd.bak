@@ -1,0 +1,29 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity seven_seg_scroll_bcd is
+port(
+	clk : in std_logic;
+	reset : in std_logic;
+	start : in std_logic;
+	bcd_out : out std_logic_vector(3 downto 0);
+	sel_out : out std_logic_vector(3 downto 0);
+);
+end entity;
+
+architecture Behavior of seven_seg_scroll_bcd is
+	signal mux_clk : std_logic;
+	signal scroll_clk : std_logic;
+	
+	type display_buffer_t is array (0 to 3) of std_logic_vector(3 downto 0);
+	signal display_buffer : display_buffer_t;
+	
+	type fsm_states is (state_0, state_1, state_2, state_3,
+							  state_4, state_5, state_6, state_7,
+							  state_8, state_9, state_10, state_11,
+							  state_12, state_13, state_14);
+	signal state : fsm_states;
+	
+begin
+	

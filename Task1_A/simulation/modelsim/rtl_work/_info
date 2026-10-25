@@ -1,0 +1,140 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/ee214_project/Task1_A/simulation/modelsim
+Eclock_divider
+Z1 w1792538356
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z5 8C:/ee214_project/Task1_A/clock_divider.vhd
+Z6 FC:/ee214_project/Task1_A/clock_divider.vhd
+l0
+L5 1
+VKRYeXJBM@lB?=EizZ?RT40
+!s100 ZhI[Nn7kf4HAF7z:1KoP?0
+Z7 OV;C;2020.1;71
+31
+Z8 !s110 1792748275
+!i10b 1
+Z9 !s108 1792748275.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/ee214_project/Task1_A/clock_divider.vhd|
+Z11 !s107 C:/ee214_project/Task1_A/clock_divider.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Abehavior
+R2
+R3
+R4
+DEx4 work 13 clock_divider 0 22 KRYeXJBM@lB?=EizZ?RT40
+!i122 1
+l14
+L13 24
+V20dijBbiLn[MO5V8>6D1H0
+!s100 2=W;>k^5z_<Y7YlIOUEN;1
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eseven_seg_scroll_bcd
+Z14 w1792748216
+R2
+R3
+R4
+!i122 0
+R0
+Z15 8C:/ee214_project/Task1_A/seven_seg_scroll_bcd.vhd
+Z16 FC:/ee214_project/Task1_A/seven_seg_scroll_bcd.vhd
+l0
+L5 1
+V8UMcY`X:mZgN3=cgkEM2W0
+!s100 eZn[zh=N;dH<iV_1gbDle3
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/ee214_project/Task1_A/seven_seg_scroll_bcd.vhd|
+Z18 !s107 C:/ee214_project/Task1_A/seven_seg_scroll_bcd.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R2
+R3
+R4
+DEx4 work 20 seven_seg_scroll_bcd 0 22 8UMcY`X:mZgN3=cgkEM2W0
+!i122 0
+l38
+L15 85
+V49<JfJWmRh2<zaHj@`<X21
+!s100 [5NXBb9K5nlnT`[8l]<h03
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Essd_bcd_tb
+Z19 w1792531724
+R2
+R3
+R4
+!i122 2
+R0
+Z20 8C:/ee214_project/Task1_A/ssd_bcd_tb.vhd
+Z21 FC:/ee214_project/Task1_A/ssd_bcd_tb.vhd
+l0
+L5 1
+Vn?MUle2Do3C<>U265_DgC3
+!s100 =@ACdfjU]aF3K3ESk7dO42
+R7
+31
+Z22 !s110 1792748276
+!i10b 1
+Z23 !s108 1792748276.000000
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/ee214_project/Task1_A/ssd_bcd_tb.vhd|
+!s107 C:/ee214_project/Task1_A/ssd_bcd_tb.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R2
+R3
+R4
+DEx4 work 10 ssd_bcd_tb 0 22 n?MUle2Do3C<>U265_DgC3
+!i122 2
+l22
+L8 29
+Vn6I5Zd=2^IoFlDcWHoUTg2
+!s100 Q<eKX4D:z9W7?O4Xf]`cD1
+R7
+31
+R22
+!i10b 1
+R23
+R24
+Z25 !s107 C:/ee214_project/Task1_A/ssd_bcd_tb.vhd|
+!i113 1
+R12
+R13

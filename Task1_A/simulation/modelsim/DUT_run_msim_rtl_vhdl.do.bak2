@@ -1,0 +1,18 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {C:/ee214_project/Task1_A/seven_seg_scroll_bcd.vhd}
+vcom -93 -work work {C:/ee214_project/Task1_A/clock_divider.vhd}
+
+vcom -93 -work work {C:/ee214_project/Task1_A/ssd_bcd_tb.vhd}
+
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  ssd_bcd_tb
+
+add wave *
+view structure
+view signals
+run 1 sec

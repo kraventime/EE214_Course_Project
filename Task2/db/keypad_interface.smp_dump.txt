@@ -1,0 +1,11 @@
+
+State Machine - |keypad_interface|state
+Name state.KEY_RELEASE state.DEBOUNCE state.KEY_PRESS state.SCAN_COL4 state.SCAN_COL3 state.SCAN_COL2 state.SCAN_COL1 state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 0 
+state.SCAN_COL1 0 0 0 0 0 0 1 1 
+state.SCAN_COL2 0 0 0 0 0 1 0 1 
+state.SCAN_COL3 0 0 0 0 1 0 0 1 
+state.SCAN_COL4 0 0 0 1 0 0 0 1 
+state.KEY_PRESS 0 0 1 0 0 0 0 1 
+state.DEBOUNCE 0 1 0 0 0 0 0 1 
+state.KEY_RELEASE 1 0 0 0 0 0 0 1 

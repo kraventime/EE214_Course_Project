@@ -1,0 +1,24 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity keypad_tb is
+end entity;
+
+architecture Testbench of keypad_tb is
+	signal clock, reset : std_logic = '0';
+	signal row_in : std_logic_vector(3 downto 0);
+
+	component keypad_interface is
+		port (
+			clk : in std_logic;
+			reset : in std_logic;
+			row_in : in std_logic_vector(3 downto 0);
+			col_out : out std_logic_vector(3 downto 0);
+			led_out : out std_logic_vector(3 downto 0);
+			key_valid : out std_logic
+		);
+	end component;
+
+begin
+	clock <
